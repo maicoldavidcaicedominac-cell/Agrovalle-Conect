@@ -42,7 +42,7 @@ class CatalogoCosechasServiceTests {
   }
 
   @Test
-  void incluyeOrigenYProductorSinExponerDatosPrivados() {
+  void incluyeOrigenYproductorSinExponerDatosPrivados() {
     Cosecha oferta = oferta();
     when(cosechas.listar("Dagua", "Frutas")).thenReturn(List.of(oferta));
     when(fincas.findById(9)).thenReturn(Optional.of(
